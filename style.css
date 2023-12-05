@@ -2,16 +2,16 @@
 /* *{
     box-sizing: border-box;
 } */
-.body{
+/*.body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans','Arial',sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: white;
-    color: #444`;
+    color: #444;
 }
-/* CONTAINER */
+/* CONTAINER 
 .container{
     margin: 100%;
     max-width:1160px ;
@@ -19,7 +19,7 @@
     padding-right: 30px;
     margin-right: auto;
     margin-left: auto;
-}
+}*/
 .site-header{
     display: flex;
     width: 1140px;
