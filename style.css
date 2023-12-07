@@ -1,8 +1,11 @@
-/* GLOBAL */
-/* *{
+
+*{
     box-sizing: border-box;
-} */
-/*.body{
+}
+ html{
+    scroll-behavior:smooth ;
+ }
+.body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans','Arial',sans-serif;
@@ -11,59 +14,273 @@
     background-color: white;
     color: #444;
 }
-/* CONTAINER 
+/* CONTAINER */
 .container{
-    margin: 100%;
+    width:100%;
     max-width:1160px ;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: auto;
     margin-left: auto;
-}*/
+}
+
+/* HEADER */
 .site-header{
-    display: flex;
-    width: 1140px;
-    padding: 24px;
-    justify-content: center;
-    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .site-header-container{
     display: flex;
-    width: 1100px;
     justify-content: space-between;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
 }
-.logo{
-    width: 185px;
-    height: 49.936px;   
+.site-logo-link{
+    display: flex;
+    align-items: center;
+    color: #222;
+    text-decoration: none;
+    font-family: 'Open Sans','Arial',sans-serif;
+    font-size:24px;
+    font-weight:600;
+}
 
+.site-logo-link:hover{
+    color: #de2e54;
+}
+.site-logo-link:active{
+    opacity: 0.6;
+
+}.site-logo-img{
+    /* width: 185px;
+    height: 49.936px;    */
+    margin-right: 16px;
+    border-radius:50% ;
 }
 .sitenav{
     display: flex;
     align-items: flex-start;
-}
-.sitenav-list{
-    color: #222;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
+    font-family: 'Open Sans','Arial',sans-serif;
+    font-size:14px ;
     font-weight: 700;
-    line-height: 150%;
-    text-decoration: none;
-    letter-spacing: 2px;
+    line-height: 1.5;
     text-transform: uppercase;
+
+} 
+.sitenav-list {
+    display: flex;
+    list-style: none;
 }
-.pink-btn{
+
+.sitenav-item:not(:last-child){
+    margin-right: 32px;
+}
+
+.sitenav-item-link{
+    color: #222;
+    text-decoration: none;
+}
+.sitenav-item-link:hover{
+    color: #de2e54;
+}
+
+.sitenav-item-link:active{
+    opacity: 0.6;
+}
+
+.enrollment-link{
+    display: inline-block;
+    background-color:#de2e54;
     color: #FFF;
-    font-family: Open Sans Condensed;
-    font-size: 15px;
-    font-style: normal;
+    border: 2px solid #de2e54;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    
+}
+.enrollment-link:hover{
+    background-color: #fff;
+    color: #222;
+}
+.enrollment-link:active{
+    background-color: #de2e54;
+    opacity: 0.6;
+    color: #fff;
+}
+.enrollment-link-outline{
+    background-color:transparent ;
+    border-color:#fff;
+    color: #fff;
+}
+.enrollment-link-outline:hover{
+    background-color: #de2e54;
+    border-color:transparent ;
+    color: #fff;
+}
+.enrollment-solid{
+   border: 0;
+}
+.enrollment-solid:hover{
+    background-color: rgba(222, 46, 84, 0.80);
+    color: #fff;
+}
+.enrollment-solid:active{
+    background-color: rgba(222, 46, 84, 0.80);
+    opacity:1
+    
+}
+
+/* HERO */
+.hero{
+    background-color:  #0EB4C1;
+    color: #fff;
+   
+}
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+}
+   
+    
+.hero-contend{
+    width: 500px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.hero-heading{
+    font-family: 'Open Sans Condensed','Arial',  sans-serif;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 150% ;
-    letter-spacing: 2px;
-    text-transform:uppercase;
+    list-style: 1.2;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.hero-text{
+    width: 440px;
+    font-family: 'Open Sans','Arial',sans-serif ;
+    font-size: 18px;
+    font-weight: 400px;
+    list-style: 1.5;
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+.hero-img{
+    align-self: flex-end;
+}
+/* INDEX SERVICES */
+.index-services{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.index-services-heading{
+    color: #000;
+    text-align: center;
+    font-family: 'Open Sans Condensed','Open Sans','Arial',sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom:56px ; 
+
 
 }
+.index-services-list{
+    width: 864px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    margin-bottom: 60px;
+    list-style: none;
+}
+.index-services-item{
+    padding: 0;
+
+}
+.index-services-item:not(:last-child){
+    margin-bottom: 80px;
+}
+.index-service{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+
+.index-services-img{
+    margin-right: 64px;
+}
+.index-services-title{
+    color: #222;
+    font-family: 'Open Sans Condensed','Open Sans','Arial',sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top:0 ; 
+    margin-bottom: 24px;
+}
+.index-services-desription{
+    color: #444;
+    font-family: 'Open Sans','Arial',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+    margin: 0;
     
+}
+.index-services-action{
+    display: flex;
+    justify-content: center;
+}
+/* CTA */
+.cta{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color:#0EB4C1 ;
+    color: #fff;
+}
+.cta-heading{
+   text-align: center;
+   color: #FFF;
+   font-family: 'Open Sans Condensed','Open Sans','Arial'sans-serif;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.2; 
+}
+
+.cta-link{
+    display: flex;
+    align-items: center;
+    justify-content: center  ;
+}
+ 
+.cta-links-item:not(:last-child){
+    margin-right: 40px;
+}
+/* SITE FOOTER */
+
+.site-footer{
+    background-color: #222;
+    padding: 24px;
+    color: #fff;
+}
+.site-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-footer-logo-link{
+    color: #fff;
+}
+.site-footer-logo-link:active{
+    color: #fff; 
+}
+.sitenav-footer-sitenav-link .sitenav-item-link{
+    color: #fff;
+}
+.sitenav-footer-sitenav-link .sitenav-item-link:hover{
+    color: #de2e54;
+}
+.sitenav-footer-sitenav-link .sitenav-item-link:active{
+    color:#fff; 
+}
