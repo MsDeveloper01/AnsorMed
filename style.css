@@ -214,6 +214,8 @@ body{
 
 .index-services-img{
     margin-right: 64px;
+    width: 200px;
+    height: 200px;
 }
 .index-services-title{
     color: #222;
