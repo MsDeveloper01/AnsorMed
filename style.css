@@ -2,9 +2,9 @@
 *{
     box-sizing: border-box;
 }
- html{
+html{
     scroll-behavior:smooth ;
- }
+}
 body{
     margin: 0;
     font-family: 'Open Sans','Arial',sans-serif;
@@ -123,7 +123,7 @@ body{
     color: #fff;
 }
 .enrollment-solid{
-   border: 0;
+    border: 0;
 }
 .enrollment-solid:hover{
     background-color: rgba(222, 46, 84, 0.80);
@@ -139,14 +139,11 @@ body{
 .hero{
     background-color:  #0EB4C1;
     color: #fff;
-   
 }
 .hero-container{
     display: flex;
     justify-content: space-between;
 }
-   
-    
 .hero-contend{
     width: 500px;
     padding-top: 120px;
@@ -209,7 +206,7 @@ body{
 .index-service{
     display: flex;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
 }
 
 .index-services-img{
@@ -249,14 +246,13 @@ body{
     color: #fff;
 }
 .cta-heading{
-   text-align: center;
-   color: #FFF;
-   font-family: 'Open Sans Condensed','Open Sans','Arial'sans-serif;
-   font-size: 36px;
-   font-weight: 700;
-   line-height: 1.2; 
-   margin-top: 0;
-   
+    text-align: center;
+    color: #FFF;
+    font-family: 'Open Sans Condensed','Open Sans','Arial'sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2; 
+    margin-top: 0;
 }
 
 .cta-link{
@@ -264,7 +260,6 @@ body{
     align-items: center;
     justify-content: center  ;
 }
- 
 .cta-links-item:not(:last-child){
     margin-right: 40px;
 }
