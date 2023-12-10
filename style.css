@@ -195,6 +195,7 @@ body{
     margin-right: auto;
     margin-left: auto;
     padding: 0;
+    margin-top: 0;
     margin-bottom: 60px;
     list-style: none;
 }
